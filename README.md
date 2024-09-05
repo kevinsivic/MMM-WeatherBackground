@@ -25,13 +25,16 @@ git clone https://github.com/BrianHepler/MMM-WeatherBackground
 {
   module: "MMM-WeatherBackground",
   // don't assign position.
-  config: {}
+  config: {
+    clientID: "yourClientID"
+  }
 },
 ```
 
 ### Configuration Options
 |Option | Default | Description |
 |--------|--------|----|
+|clientID| `""` | REQUIRED: access key from unsplash |
 |verbose| `false` | Enable log messages.|
 |source| `weather` | Which weather module to use for image searches. Possible values:  `weather`,  `MMM-NOAA3`, `MMM-OpenWeatherForecast`, `MMM-DarkskyForecast` **Note:** Dark Sky is
 scheduled to cease operation at the end of 2022.|
